@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const spotsLeft = details.max_participants - details.participants.length;
 
         // Crea la lista dei partecipanti
-        let participantsHTML = "<ul>";
+        let participantsHTML = "<ul class='participants-list'>";
         if (details.participants.length === 0) {
           participantsHTML += "<li><em>No participants yet</em></li>";
         } else {
@@ -36,7 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
           <p>${details.description}</p>
           <p><strong>Schedule:</strong> ${details.schedule}</p>
           <p><strong>Availability:</strong> ${spotsLeft} spots left</p>
-          <div><strong>Participants:</strong> ${participantsHTML}</div>
+          <div class="participants-section">
+            <strong>Participants:</strong>
+            ${participantsHTML}
+          </div>
         `;
 
         activitiesList.appendChild(activityCard);
