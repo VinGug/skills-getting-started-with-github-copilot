@@ -168,4 +168,19 @@ footer {
   margin-bottom: 3px;
   color: #333;
   font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.unregister-btn {
+  font-size: 12px;
+  padding: 4px 8px;
+  background-color: #757575;
+  margin-left: 10px;
+}
+
+.unregister-btn:hover {
+  background-color: #616161;
 }
